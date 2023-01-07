@@ -30,6 +30,7 @@ jobs:
       run: npm install
       
     - name: Stop pm2
+      run: ls
       run: pm2 stop guihub
       if: ${{failure()}}
       
