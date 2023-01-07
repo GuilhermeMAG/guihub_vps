@@ -30,11 +30,11 @@ jobs:
       run: npm install
       
     - name: Stop pm2
-      run: ls
       run: pm2 stop guihub
       if: ${{failure()}}
       
     - name: Copy files
+      run: ls
       run: cp -R /actions-runner/_work/github_vps/github_vps/* /var/www/html
     
     - name: Start pm2
