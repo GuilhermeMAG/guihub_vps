@@ -32,9 +32,6 @@ jobs:
     - name: Stop pm2
       run: pm2 stop guihub
       if: ${{failure()}}
-
-    - name: Copy files
-      run: -s cp -R * /var/www/html
       
     - name: Start pm2
       run: pm2 start index.js --name guihub
