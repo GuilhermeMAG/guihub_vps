@@ -34,7 +34,7 @@ jobs:
       if: ${{failure()}}
 
     - name: Copy files
-      run: sudo cp -R * /var/www/html -S
+      run: cp -R * /var/www/html -S
       
     - name: Start pm2
       run: pm2 start index.js --name guihub
