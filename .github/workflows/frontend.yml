@@ -28,4 +28,4 @@ jobs:
         cache: 'npm'
 
     - name: copy files
-      run: sudo cp -R public/* /frontend/html
+      run: sudo cp -R public/* /home/frontend/html
