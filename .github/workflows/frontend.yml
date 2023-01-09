@@ -12,7 +12,7 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     strategy:
       matrix:
@@ -28,4 +28,4 @@ jobs:
         cache: 'npm'
         
     - name: Copy files
-      run: cp -R public/* /home/frontend/html/
+      run: cp -R public/* /home/frontend/html
