@@ -28,7 +28,7 @@ jobs:
         cache: 'npm'
         
     - name: Create folder
-      run: mkdir /home/frontend/html/guihub_vps
+      run: mkdir /home/frontend/html/guihub.com.br
     
     - name: Copy files
-      run: cp -R public/* /home/frontend/html/guihub_vps
+      run: cp -R public/* /home/frontend/html/guihub.com.br
