@@ -27,5 +27,8 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
         
+    - name: Create folder
+      run: mkdir /home/frontend/html/guihub_vps
+    
     - name: Copy files
-      run: cp -R public/* /home/frontend/html
+      run: cp -R public/* /home/frontend/html/guihub_vps
