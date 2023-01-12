@@ -1,6 +1,9 @@
+require('dotenv').config({
+    path: process.env.NODE_ENV === "test" ? ".env.testing" : ".env"
+})
 const express = require('express');
 const app = express();
-const port = 3333;
+const port = process.env.PORT
 
 app.use(express.static('public'));
 

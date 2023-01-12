@@ -14,6 +14,7 @@
     <meta name="twitter:title" content="Guihub">
     <link rel="icon" type="image/png" sizes="396x396" href="assets/img/logo.png">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&amp;display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -24,8 +25,12 @@
 <body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="72">
     <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-dark text-uppercase" id="mainNav" style="height: 100px;">
         <div class="container"><button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler text-white bg-primary navbar-toggler-right text-uppercase rounded" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+            <div class="form-check form-switch">
+                <input type="checkbox" class="form-check-input" id="darkSwitch" />
+                <label class="custom-control-label text-primary" for="darkSwitch">Dark Mode</label>
+            </div>
             <div class="collapse navbar-collapse" id="navbarResponsive" style="background: var(--bs-navbar-color);padding-left: 40px;border-radius: 30px;padding-bottom: 10px;color: var(--bs-navbar-color);">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav ms-auto ">
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfólio</a></li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">Sobre</a></li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contato</a></li>
@@ -334,6 +339,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="assets/js/bs-init.js"></script>
     <script src="assets/js/freelancer.js"></script>
+    <script src="./assets/js/dark-mode-switch.min.js"></script>
 </body>
 
 </html>
